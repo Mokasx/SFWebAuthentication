@@ -5,8 +5,8 @@ ASWebAuthSession.prototype.start = function(redirectScheme, requestURL, callback
   cordova.exec(callback, errorCallback, PLUGIN_NAME, 'start', [redirectScheme, requestURL]);
 };
 
-ASWebAuthSession.prototype.cancel = function(){
-  cordova.exec('cancel');
+ASWebAuthSession.prototype.cancel = function(callback, errorCallback){
+  cordova.exec(callback,errorCallback,PLUGIN_NAME,'cancel',[]);
 };
 
 ASWebAuthSession.install = function () {
