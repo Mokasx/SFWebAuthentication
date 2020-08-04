@@ -58,5 +58,10 @@ ASWebAuthenticationSession *_asAuthenticationVC;
 - (nonnull ASPresentationAnchor)presentationAnchorForWebAuthenticationSession:(nonnull ASWebAuthenticationSession *)session API_AVAILABLE(ios(13.0)){
     return [[[UIApplication sharedApplication] windows] firstObject];
 }
+- (void)cancel{
+    if(appIsActive){
+        _asAuthenticationVC.cancel();
+    }
+}
 
 @end
