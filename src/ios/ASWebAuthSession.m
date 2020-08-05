@@ -5,7 +5,7 @@
 
 #import <Cordova/CDVAvailability.h>
 
-API_AVAILABLE(ios(12.0))
+
 ASWebAuthenticationSession *_asAuthenticationVC;
 
 @implementation ASWebAuthSession;
